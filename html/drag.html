@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+div{float:left;position:relative;border:1px solid #FF00FF;width:220px;height:180px;}
+</style>
+<script>
+function dragStart(ev){
+ 
+ ev.dataTransfer.setData("Text",ev.target.id);
+ 
+}
+function dragOver(ev){
+ ev.preventDefault();
+}
+function drop(ev){
+ ev.preventDefault();
+ var id = ev.dataTransfer.getData("Text");
+ ev.target.appendChild(document.getElementById(id));
+}
+</script>
+</head>
+<body>
+<div id="top" ondragover="dragOver(event)" ondrop="drop(event)">
+<img id="img" src="https://www.baidu.com/img/baidu_jgylogo3.gif" draggable="true" width="200" height="160" ondragstart="dragStart(event)" />
+</div>
+<br/>
+<div id="middle" ondragover="dragOver(event)" ondrop="drop(event)" style="clear:both">
+</div>
+<br/>
+<div id="bottom" ondragover="dragOver(event)" ondrop="drop(event)" style="clear:both">
+</div>
+
+</body>
+</html>

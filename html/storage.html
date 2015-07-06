@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+div{float:center;width:320px;}
+</style>
+</head>
+<body>
+<div>
+<button id="countbtn" onclick="countSession()" >count</button>
+<br />
+<p id="p" >clicked times. </p>
+</div>
+
+<script>
+var countbtn = document.getElementById("countbtn");
+var p = document.getElementById("p");
+function count(){
+	if(typeof("Storage")!="undefined"){
+		if(localStorage.counter){
+			localStorage.counter = Number(localStorage.counter) + 1;
+		}else{
+			localStorage.counter = 1;
+		}
+		p.innerHTML="you clicked "+localStorage.counter+" time(s).";
+	}
+}
+function countSession(){
+	if(typeof("Storage") != "undefined"){
+		if(sessionStorage.counter){
+			sessionStorage.counter = Number(sessionStorage.counter)+1;
+		}else{
+		sessionStorage.counter = 1;
+		}
+		p.innerHTML = "you clicked "+sessionStorage.counter+" time(s).";
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+div{float:center;width:320px;}
+</style>
+</head>
+<body>
+<div>
+<p id="result">
+show.
+</p>
+</div>
+
+<script>
+var result = document.getElementById("result");
+result.innerHTML = navigator.appName;
+/* if(typeof("EventSource") != "undefined"){
+	var evsrc = new EventSource("http://www.w3cschool.cc/try/demo_source/demo_sse.php");
+	evsrc.onmessage = function(event){
+		result.innerHTML += event.data + "<br />";
+	}else{
+		result.innerHTML = "your browser does not support eventsource.";
+	}
+}
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+div{float:center;width:320px;}
+</style>
+</head>
+<body>
+<div>
+<video id="video" width="320">
+	<source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4" type="video/mp4" />
+	Your browser does not support video !!
+</video>
+<button id="control" onclick="playOrPause()" >play</button>
+<button id="scale" onclick="scale()" >scale</button>
+</div>
+
+<script>
+var video = document.getElementById("video");
+var control = document.getElementById("control");
+function playOrPause(){
+	if(video.paused){
+		video.play();
+		control.innerHTML = "pause";
+	}else{
+		video.pause();
+		control.innerHTML = "play";
+	}
+}
+function scale(){
+	if(video.width>640){
+		video.width = 320;
+	}else{
+		video.width += 30;
+	}
+}
+</script>
+</body>
+</html>

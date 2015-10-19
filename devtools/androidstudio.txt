@@ -1,0 +1,7 @@
+LogcatÅäÉ«£ºEditor -> Colors&Fonts -> Android Logcat
+	Verbose:BBBBBB
+	Info:33FF33
+	Debug:55AAFF
+	Warning:BBBB22
+	Error:FF3333
+	Assert:FF1199

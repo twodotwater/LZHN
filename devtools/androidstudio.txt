@@ -1,7 +1,30 @@
-Logcat��ɫ��Editor -> Colors&Fonts -> Android Logcat
+Logcat: Editor -> Colors&Fonts -> Android Logcat
 	Verbose:BBBBBB
 	Info:33FF33
 	Debug:55AAFF
 	Warning:BBBB22
 	Error:FF3333
 	Assert:FF1199
+
+系统字体设置：
+Settings --> Appearance ，勾选 Override default fonts by (not recommended)
+
+编程字体设置：
+Settings --> Editor --> Colors & Fonts --> Font 
+
+默认文件编码：
+Settings --> File Encodings 。建议将 IDE Encoding 、 Project Encoding 、 Properties Fiels 都设置成统一的编码。
+
+显示行号
+Settings --> Editor --> Appearance ，勾选 Show line numbers
+
+自动导入类包
+Settings --> Editor --> Auto Import ，勾选 Add unambiguous improts on the fly 
+
+跳过检查Android SDK
+在Android Studio安装目录下的 bin 目录下，找到 idea.properties 文件，在文件最后追加 disable.android.first.run=true
+
+Gradle慢
+1：Offline work
+2：-Xmx2048m -XX:MaxPermSize=512m
+3：Compile ...in parallel

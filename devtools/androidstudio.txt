@@ -1,10 +1,10 @@
 Logcat: Editor -> Colors&Fonts -> Android Logcat
-	Verbose:BBBBBB
-	Info:33FF33
-	Debug:55AAFF
-	Warning:BBBB22
-	Error:FF3333
-	Assert:FF1199
+	Local Verbose:BBBBBB
+	Variable Info:33FF33
+	Comment Debug:55AAFF
+	Class Warning:BBBB22
+	Error Error:FF3333
+	Method Assert:FF1199
 
 系统字体设置：
 Settings --> Appearance ，勾选 Override default fonts by (not recommended)

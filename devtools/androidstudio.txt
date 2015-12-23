@@ -5,6 +5,7 @@ Logcat: Editor -> Colors&Fonts -> Android Logcat
 	Class Warning:BBBB22
 	Error Error:FF3333
 	Method Assert:FF1199
+	Number :11BB77
 
 系统字体设置：
 Settings --> Appearance ，勾选 Override default fonts by (not recommended)
@@ -28,3 +29,13 @@ Gradle慢
 1：Offline work
 2：-Xmx2048m -XX:MaxPermSize=512m
 3：Compile ...in parallel
+
+SDK更新
+1：Add this url to "User Defined Sites": http://android-mirror.bugly.qq.com:8080/android/repository/addon.xml
+2：Proxy Setting：android-mirror.bugly.qq.com:8080
+3：Make sue to select: Force https://... sources to be fetched using http://...
+
+Android Studio更新（vmoptions）
+-Djava.net.preferIPv4Stack=true
+-Didea.updates.url=http://android-mirror.bugly.qq.com:8080/AndroidStudio/patches/updates.xml
+-Didea.patches.url=http://android-mirror.bugly.qq.com:8080/AndroidStudio/patches/
